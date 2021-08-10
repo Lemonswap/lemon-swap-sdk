@@ -1,0 +1,53 @@
+{
+  "name": "@lemonswap/sdk",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "🛠 An SDK for building applications on top of Lemonswap",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemonswap/lemon-swap-sdk.git"
+  },
+  "keywords": [
+    "lemonswap",
+    "ethereum"
+  ],
+  "module": "dist/v2-sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.0.0",
+    "@ethersproject/solidity": "^5.0.0",
+    "@uniswap/sdk-core": "^3.0.0-alpha.3",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/big.js": "^4.0.5",
+    "@types/jest": "^24.0.25",
+    "@lemonswap/core": "^1.0.0",
+    "tsdx": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  },
+  "bugs": {
+    "url": "https://github.com/Lemonswap/lemon-swap-sdk/issues"
+  },
+  "homepage": "https://github.com/Lemonswap/lemon-swap-sdk#readme",
+  "author": "huaming.chisha"
+}
